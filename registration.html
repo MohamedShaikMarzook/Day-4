@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATION FORM</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .main{
+                width:850px;
+                height:630px;
+                display: flex;
+                margin:auto;
+
+            }
+            .display{
+                width: 330px;
+                height:390px;
+                background-color: black;
+                margin:auto;
+                color:white;
+                border: 2px solid transparent;
+                padding: 2rem 3rem;
+                margin-top:90px;
+            }
+            .display p{
+                font-size:1 rem;
+                margin-top: 30px;
+            }
+            .reg_btn{
+                background-color: black;
+                color: white;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 300px;
+            }
+            .container{
+                padding: 30px;
+                background-color: white;
+                margin-top:80px;
+            }
+            input[type=text], input[type=email] ,input[type=number]{
+                width: 300px;
+                height: 40px;
+                display: inline-block;
+            }
+            .alert{
+                color: red;
+                font-weight: bold;          
+            
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <form>
+        <div class="container">
+            <label for="name">NAME</label><br><br>
+            <input type="text"><br><br>
+            <label for="email">EMAIL</label><br><br>
+            <input type="email"><br><br>
+            <label for="mobile">MOBILE</label><br><br>
+            <input type="number" required>
+            <p class="alert">Enter a Valid Mobile</p>
+            <button type="submit" class="reg_btn">REGISTER</button><br>
+        </div>
+        </form>
+        <div class="display">
+            <p>NAME</p>
+            <h2 id="name">Mohamed Shaik Marzook S</h2>
+            <p>EMAIL</p>
+            <p>md.s.marzook.syed@gmail.com</p>
+            <p>MOBILE</p>
+            <p>9444292269</p>
+        </div>
+    </div>
+    </body>
+</html>
